@@ -1,0 +1,90 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fecfef 100%);
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #f6d365;
+    background-image: linear-gradient(315deg, #f6d365 0%, #fda085 74%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #fda085;
+}
+
+header h1 {
+    font-size: 2.8em;
+    letter-spacing: 1.5px;
+}
+
+header p {
+    font-size: 1.4em;
+    margin-top: 10px;
+}
+
+/* Main Content */
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+main ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+main ul li {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+    flex-basis: calc(45% - 20px);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+main ul li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.2);
+}
+
+main ul li a {
+    color: #fda085;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+main ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Footer */
+footer {
+    background-color: #f6d365;
+    background-image: linear-gradient(315deg, #fda085 0%, #f6d365 74%);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 5px solid #fda085;
+}
